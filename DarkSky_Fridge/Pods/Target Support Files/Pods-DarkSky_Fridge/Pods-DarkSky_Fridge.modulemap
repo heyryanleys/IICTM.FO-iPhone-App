@@ -1,0 +1,6 @@
+framework module Pods_DarkSky_Fridge {
+  umbrella header "Pods-DarkSky_Fridge-umbrella.h"
+
+  export *
+  module * { export * }
+}
