@@ -10,7 +10,6 @@
 import UIKit
 import CoreLocation
 
-
 class ViewController: UIViewController, CLLocationManagerDelegate {
     
     let locationManager = CLLocationManager()
@@ -27,6 +26,26 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         locationManager.requestLocation()
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.first {
+            let longitude = String(location.coordinate.longitude)
+            let latitude = String(location.coordinate.latitude)
+            
+            DarkSky.weatherForCoordinates(latitude: latitude, longitude: longitude) { weatherData, error in
+                
+                if let weatherData = weatherData {
+                    print(weatherData)
+                    self.updateLabels(with: weatherData as! WeatherData, at: location)
+                }
+                    
+                else if let _ = error {
+                    self.handleError(message: "Oops! We can't seem to find your location.")
+                }
+                
+            }
+        }
     }
     
     // Can't Display Weather
@@ -50,30 +69,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             self.locationLabel.text = locationName
         }
     }
-    
-    
- /*   func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        if let location = locations.first {
-            let longitude = String(location.coordinate.longitude)
-            let latitude = String(location.coordinate.latitude)
-            
-            DarkSky.weatherForCoordinates(latitude: latitude, longitude: longitude) { weatherData, error in
-                
-                if let weatherData = weatherData {
-                    print(weatherData)
-                }
-                    
-                else if let _ = error {
-                    self.handleError(message: "Oops! We can't seem to find your location.")
-                }
-                
-            }
-        }
-    } */
-    
-
-
-
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -81,7 +76,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 
     }
     
-/*    override func viewWillAppear(_ animated: Bool) {
+  /*  override func viewWillAppear(_ animated: Bool) {
         DarkSky.weatherForCoordinates(latitude: "37", longitude: "122") { (response, error) in
             print("\(response)")
             print("\(error)")
