@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BA5F3D431DEA2BA10000A46B"
-               BuildableName = "DarkSky_Fridge.app"
-               BlueprintName = "DarkSky_Fridge"
-               ReferencedContainer = "container:DarkSky_Fridge.xcodeproj">
+               BuildableName = "IICTM.FO.app"
+               BlueprintName = "IICTM.FO"
+               ReferencedContainer = "container:IICTM.FO.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BA5F3D431DEA2BA10000A46B"
-            BuildableName = "DarkSky_Fridge.app"
-            BlueprintName = "DarkSky_Fridge"
-            ReferencedContainer = "container:DarkSky_Fridge.xcodeproj">
+            BuildableName = "IICTM.FO.app"
+            BlueprintName = "IICTM.FO"
+            ReferencedContainer = "container:IICTM.FO.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BA5F3D431DEA2BA10000A46B"
-            BuildableName = "DarkSky_Fridge.app"
-            BlueprintName = "DarkSky_Fridge"
-            ReferencedContainer = "container:DarkSky_Fridge.xcodeproj">
+            BuildableName = "IICTM.FO.app"
+            BlueprintName = "IICTM.FO"
+            ReferencedContainer = "container:IICTM.FO.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BA5F3D431DEA2BA10000A46B"
-            BuildableName = "DarkSky_Fridge.app"
-            BlueprintName = "DarkSky_Fridge"
-            ReferencedContainer = "container:DarkSky_Fridge.xcodeproj">
+            BuildableName = "IICTM.FO.app"
+            BlueprintName = "IICTM.FO"
+            ReferencedContainer = "container:IICTM.FO.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

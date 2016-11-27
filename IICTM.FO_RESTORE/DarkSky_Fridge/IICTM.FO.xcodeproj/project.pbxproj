@@ -20,7 +20,7 @@
 /* Begin PBXFileReference section */
 		2ED1FABC63007A9E86328E52 /* Pods-DarkSky_Fridge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkSky_Fridge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DarkSky_Fridge/Pods-DarkSky_Fridge.debug.xcconfig"; sourceTree = "<group>"; };
 		61FF36AE4DADABAF967C57FF /* Pods-DarkSky_Fridge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkSky_Fridge.release.xcconfig"; path = "Pods/Target Support Files/Pods-DarkSky_Fridge/Pods-DarkSky_Fridge.release.xcconfig"; sourceTree = "<group>"; };
-		BA5F3D441DEA2BA10000A46B /* DarkSky_Fridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DarkSky_Fridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA5F3D441DEA2BA10000A46B /* IICTM.FO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IICTM.FO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA5F3D471DEA2BA10000A46B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA5F3D491DEA2BA10000A46B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BA5F3D4C1DEA2BA10000A46B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 		BA5F3D451DEA2BA10000A46B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BA5F3D441DEA2BA10000A46B /* DarkSky_Fridge.app */,
+				BA5F3D441DEA2BA10000A46B /* IICTM.FO.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,9 +97,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BA5F3D431DEA2BA10000A46B /* DarkSky_Fridge */ = {
+		BA5F3D431DEA2BA10000A46B /* IICTM.FO */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BA5F3D561DEA2BA10000A46B /* Build configuration list for PBXNativeTarget "DarkSky_Fridge" */;
+			buildConfigurationList = BA5F3D561DEA2BA10000A46B /* Build configuration list for PBXNativeTarget "IICTM.FO" */;
 			buildPhases = (
 				B6514D2230BC23C23A218687 /* [CP] Check Pods Manifest.lock */,
 				BA5F3D401DEA2BA10000A46B /* Sources */,
@@ -112,9 +112,9 @@
 			);
 			dependencies = (
 			);
-			name = DarkSky_Fridge;
+			name = IICTM.FO;
 			productName = DarkSky_Fridge;
-			productReference = BA5F3D441DEA2BA10000A46B /* DarkSky_Fridge.app */;
+			productReference = BA5F3D441DEA2BA10000A46B /* IICTM.FO.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -134,7 +134,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BA5F3D3F1DEA2BA10000A46B /* Build configuration list for PBXProject "DarkSky_Fridge" */;
+			buildConfigurationList = BA5F3D3F1DEA2BA10000A46B /* Build configuration list for PBXProject "IICTM.FO" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -147,7 +147,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BA5F3D431DEA2BA10000A46B /* DarkSky_Fridge */,
+				BA5F3D431DEA2BA10000A46B /* IICTM.FO */,
 			);
 		};
 /* End PBXProject section */
@@ -373,7 +373,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BA5F3D3F1DEA2BA10000A46B /* Build configuration list for PBXProject "DarkSky_Fridge" */ = {
+		BA5F3D3F1DEA2BA10000A46B /* Build configuration list for PBXProject "IICTM.FO" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BA5F3D541DEA2BA10000A46B /* Debug */,
@@ -382,7 +382,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BA5F3D561DEA2BA10000A46B /* Build configuration list for PBXNativeTarget "DarkSky_Fridge" */ = {
+		BA5F3D561DEA2BA10000A46B /* Build configuration list for PBXNativeTarget "IICTM.FO" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BA5F3D571DEA2BA10000A46B /* Debug */,
