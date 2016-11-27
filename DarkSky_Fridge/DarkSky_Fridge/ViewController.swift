@@ -64,6 +64,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     // Displaying Weather Based On Location
     func updateLabels(with data: WeatherData, at location: CLLocation) {
         self.tempLabel.text = data.temperature
+/*        if (data.temperature >= 40) {
+            <#code#>
+        }*/
+        self.backgroundImage.image = UIImage(named: data.temperature)
+        self.warmImage.image = UIImage(named: data.temperature)
         
         CLGeocoder().reverseGeocodeLocation(location) { placemarks, error in
             let locationName = placemarks?.first?.locality ?? "Unknown Location"
@@ -76,6 +81,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         // Dispose of any resources that can be recreated.
 
     }
+    
     
   /*  override func viewWillAppear(_ animated: Bool) {
         DarkSky.weatherForCoordinates(latitude: "37", longitude: "122") { (response, error) in
