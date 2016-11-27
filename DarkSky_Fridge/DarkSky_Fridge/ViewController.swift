@@ -15,6 +15,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     let locationManager = CLLocationManager()
     
     // Linking UI
+    @IBOutlet weak var warmImage: UIImageView!
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var tempLabel: UILabel!

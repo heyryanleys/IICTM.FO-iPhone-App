@@ -21,36 +21,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="warm" translatesAutoresizingMaskIntoConstraints="NO" id="Nnu-b8-yl8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="COLD" translatesAutoresizingMaskIntoConstraints="NO" id="I4X-Vk-tbC">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xW3-5A-abD">
-                                <rect key="frame" x="144" y="489" width="86" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="˚F" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEd-Pf-CI6">
+                                <rect key="frame" x="156" y="589" width="181" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="58"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="˚F" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEd-Pf-CI6">
-                                <rect key="frame" x="166" y="518" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xW3-5A-abD">
+                                <rect key="frame" x="92" y="557" width="309" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="33"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Nnu-b8-yl8" secondAttribute="bottom" id="42O-HB-pBf"/>
                             <constraint firstItem="I4X-Vk-tbC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="DCw-Fw-yCo"/>
+                            <constraint firstItem="Nnu-b8-yl8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="GuN-wj-ffH"/>
                             <constraint firstAttribute="trailing" secondItem="I4X-Vk-tbC" secondAttribute="trailing" id="Qbc-py-doP"/>
+                            <constraint firstAttribute="trailing" secondItem="Nnu-b8-yl8" secondAttribute="trailing" id="S8C-ai-VwL"/>
+                            <constraint firstItem="Nnu-b8-yl8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="apu-KI-tuN"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="I4X-Vk-tbC" secondAttribute="bottom" id="rol-QA-kk3"/>
                             <constraint firstItem="I4X-Vk-tbC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="smd-24-Cin"/>
+                            <constraint firstItem="Nnu-b8-yl8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zBz-c1-28I"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="backgroundImage" destination="I4X-Vk-tbC" id="aXY-x1-6HT"/>
                         <outlet property="locationLabel" destination="xW3-5A-abD" id="3VF-gc-ZcO"/>
                         <outlet property="tempLabel" destination="eEd-Pf-CI6" id="bpg-i5-91k"/>
+                        <outlet property="warmImage" destination="Nnu-b8-yl8" id="rQb-pB-g2W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -60,5 +69,6 @@
     </scenes>
     <resources>
         <image name="COLD" width="750" height="1334"/>
+        <image name="warm" width="750" height="1334"/>
     </resources>
 </document>
